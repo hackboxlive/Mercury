@@ -1,3 +1,3 @@
 # Mercury
 
-Async block relpication
+Async block replication

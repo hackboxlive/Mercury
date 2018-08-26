@@ -1,0 +1,1 @@
+cmd_/home/mr_knownothing/github/Mercury/Mercury.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/mr_knownothing/github/Mercury/Mercury.ko /home/mr_knownothing/github/Mercury/Mercury.o /home/mr_knownothing/github/Mercury/Mercury.mod.o ;  true

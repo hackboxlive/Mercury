@@ -1,11 +1,28 @@
-cmd_/home/mr_knownothing/github/Mercury/main.o := gcc -Wp,-MD,/home/mr_knownothing/github/Mercury/.main.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include  -I./arch/x86/include -I./arch/x86/include/generated/uapi -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -D__KERNEL__ -fno-pie -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-pie -no-pie -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -DCC_HAVE_ASM_GOTO -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types  -DMODULE  -DKBUILD_BASENAME='"main"'  -DKBUILD_MODNAME='"Mercury"' -c -o /home/mr_knownothing/github/Mercury/main.o /home/mr_knownothing/github/Mercury/main.c
+cmd_/home/mr_knownothing/github/Mercury/device_file.o := gcc -Wp,-MD,/home/mr_knownothing/github/Mercury/.device_file.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include  -I./arch/x86/include -I./arch/x86/include/generated/uapi -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -D__KERNEL__ -fno-pie -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-pie -no-pie -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -DCC_HAVE_ASM_GOTO -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types  -DMODULE  -DKBUILD_BASENAME='"device_file"'  -DKBUILD_MODNAME='"Mercury"' -c -o /home/mr_knownothing/github/Mercury/device_file.o /home/mr_knownothing/github/Mercury/device_file.c
 
-source_/home/mr_knownothing/github/Mercury/main.o := /home/mr_knownothing/github/Mercury/main.c
+source_/home/mr_knownothing/github/Mercury/device_file.o := /home/mr_knownothing/github/Mercury/device_file.c
 
-deps_/home/mr_knownothing/github/Mercury/main.o := \
-  include/linux/init.h \
-    $(wildcard include/config/debug/rodata.h) \
-    $(wildcard include/config/debug/set/module/ronx.h) \
+deps_/home/mr_knownothing/github/Mercury/device_file.o := \
+  include/linux/fs.h \
+    $(wildcard include/config/sysfs.h) \
+    $(wildcard include/config/smp.h) \
+    $(wildcard include/config/fs/posix/acl.h) \
+    $(wildcard include/config/security.h) \
+    $(wildcard include/config/cgroup/writeback.h) \
+    $(wildcard include/config/ima.h) \
+    $(wildcard include/config/fsnotify.h) \
+    $(wildcard include/config/fs/encryption.h) \
+    $(wildcard include/config/preempt.h) \
+    $(wildcard include/config/epoll.h) \
+    $(wildcard include/config/file/locking.h) \
+    $(wildcard include/config/mmu.h) \
+    $(wildcard include/config/quota.h) \
+    $(wildcard include/config/fs/dax.h) \
+    $(wildcard include/config/mandatory/file/locking.h) \
+    $(wildcard include/config/block.h) \
+    $(wildcard include/config/debug/lock/alloc.h) \
+    $(wildcard include/config/migration.h) \
+  include/linux/linkage.h \
   include/linux/compiler.h \
     $(wildcard include/config/sparse/rcu/pointer.h) \
     $(wildcard include/config/trace/branch/profiling.h) \
@@ -35,30 +52,27 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/x86/32.h) \
   arch/x86/include/uapi/asm/posix_types_64.h \
   include/uapi/asm-generic/posix_types.h \
+  include/linux/stringify.h \
+  include/linux/export.h \
+    $(wildcard include/config/have/underscore/symbol/prefix.h) \
+    $(wildcard include/config/modules.h) \
+    $(wildcard include/config/modversions.h) \
+    $(wildcard include/config/module/rel/crcs.h) \
+    $(wildcard include/config/trim/unused/ksyms.h) \
+    $(wildcard include/config/unused/symbols.h) \
+  arch/x86/include/asm/linkage.h \
+    $(wildcard include/config/x86/64.h) \
+    $(wildcard include/config/x86/alignment/16.h) \
+  include/linux/wait.h \
+    $(wildcard include/config/lockdep.h) \
+  include/linux/list.h \
+    $(wildcard include/config/debug/list.h) \
   include/linux/types.h \
     $(wildcard include/config/have/uid16.h) \
     $(wildcard include/config/uid16.h) \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
-  include/linux/module.h \
-    $(wildcard include/config/modules.h) \
-    $(wildcard include/config/sysfs.h) \
-    $(wildcard include/config/module/sig.h) \
-    $(wildcard include/config/modules/tree/lookup.h) \
-    $(wildcard include/config/livepatch.h) \
-    $(wildcard include/config/unused/symbols.h) \
-    $(wildcard include/config/generic/bug.h) \
-    $(wildcard include/config/kallsyms.h) \
-    $(wildcard include/config/smp.h) \
-    $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/tracing.h) \
-    $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/module/unload.h) \
-    $(wildcard include/config/constructors.h) \
-  include/linux/list.h \
-    $(wildcard include/config/debug/list.h) \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
     $(wildcard include/config/page/poisoning/zero.h) \
@@ -66,20 +80,11 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/atomic/sleep.h) \
-    $(wildcard include/config/mmu.h) \
     $(wildcard include/config/prove/locking.h) \
     $(wildcard include/config/panic/timeout.h) \
+    $(wildcard include/config/tracing.h) \
+    $(wildcard include/config/ftrace/mcount/record.h) \
   /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
-  include/linux/linkage.h \
-  include/linux/stringify.h \
-  include/linux/export.h \
-    $(wildcard include/config/have/underscore/symbol/prefix.h) \
-    $(wildcard include/config/modversions.h) \
-    $(wildcard include/config/module/rel/crcs.h) \
-    $(wildcard include/config/trim/unused/ksyms.h) \
-  arch/x86/include/asm/linkage.h \
-    $(wildcard include/config/x86/64.h) \
-    $(wildcard include/config/x86/alignment/16.h) \
   include/linux/bitops.h \
   arch/x86/include/asm/bitops.h \
     $(wildcard include/config/x86/cmov.h) \
@@ -130,6 +135,9 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/printk.h) \
     $(wildcard include/config/kmsg/ids.h) \
     $(wildcard include/config/dynamic/debug.h) \
+  include/linux/init.h \
+    $(wildcard include/config/debug/rodata.h) \
+    $(wildcard include/config/debug/set/module/ronx.h) \
   include/linux/kern_levels.h \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
@@ -143,17 +151,9 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/jump/label.h) \
   include/linux/jump_label.h \
   arch/x86/include/asm/jump_label.h \
-  include/linux/stat.h \
-  arch/x86/include/uapi/asm/stat.h \
-  include/uapi/linux/stat.h \
-  include/linux/time.h \
-    $(wildcard include/config/arch/uses/gettimeoffset.h) \
-  include/linux/seqlock.h \
-    $(wildcard include/config/debug/lock/alloc.h) \
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
     $(wildcard include/config/generic/lockbreak.h) \
-    $(wildcard include/config/preempt.h) \
   include/linux/preempt.h \
     $(wildcard include/config/preempt/count.h) \
     $(wildcard include/config/debug/preempt.h) \
@@ -175,6 +175,7 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/have/arch/within/stack/frames.h) \
     $(wildcard include/config/hardened/usercopy.h) \
   include/linux/bug.h \
+    $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/bug/on/data/corruption.h) \
   arch/x86/include/asm/bug.h \
     $(wildcard include/config/debug/bugverbose.h) \
@@ -242,6 +243,7 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
   include/asm-generic/ptrace.h \
   arch/x86/include/uapi/asm/sigcontext.h \
   arch/x86/include/asm/msr.h \
+    $(wildcard include/config/tracepoints.h) \
   arch/x86/include/asm/msr-index.h \
     $(wildcard include/config/tdp/nominal.h) \
     $(wildcard include/config/tdp/level/1.h) \
@@ -296,7 +298,6 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
   include/linux/lockdep.h \
-    $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
   include/linux/rwlock_types.h \
   arch/x86/include/asm/spinlock.h \
@@ -336,76 +337,11 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/inline/write/unlock/irq.h) \
     $(wildcard include/config/inline/read/unlock/irqrestore.h) \
     $(wildcard include/config/inline/write/unlock/irqrestore.h) \
-  include/linux/time64.h \
-  include/uapi/linux/time.h \
-  include/linux/uidgid.h \
-    $(wildcard include/config/multiuser.h) \
-    $(wildcard include/config/user/ns.h) \
-  include/linux/highuid.h \
-  include/linux/kmod.h \
-  include/linux/gfp.h \
-    $(wildcard include/config/highmem.h) \
-    $(wildcard include/config/zone/dma.h) \
-    $(wildcard include/config/zone/dma32.h) \
-    $(wildcard include/config/zone/device.h) \
-    $(wildcard include/config/numa.h) \
-    $(wildcard include/config/pm/sleep.h) \
-    $(wildcard include/config/memory/isolation.h) \
-    $(wildcard include/config/compaction.h) \
-    $(wildcard include/config/cma.h) \
-  include/linux/mmdebug.h \
-    $(wildcard include/config/debug/vm.h) \
-    $(wildcard include/config/debug/vm/pgflags.h) \
-  include/linux/mmzone.h \
-    $(wildcard include/config/force/max/zoneorder.h) \
-    $(wildcard include/config/zsmalloc.h) \
-    $(wildcard include/config/memcg.h) \
-    $(wildcard include/config/memory/hotplug.h) \
-    $(wildcard include/config/flat/node/mem/map.h) \
-    $(wildcard include/config/page/extension.h) \
-    $(wildcard include/config/no/bootmem.h) \
-    $(wildcard include/config/numa/balancing.h) \
-    $(wildcard include/config/deferred/struct/page/init.h) \
-    $(wildcard include/config/transparent/hugepage.h) \
-    $(wildcard include/config/have/memory/present.h) \
-    $(wildcard include/config/have/memoryless/nodes.h) \
-    $(wildcard include/config/need/node/memmap/size.h) \
-    $(wildcard include/config/have/memblock/node/map.h) \
-    $(wildcard include/config/need/multiple/nodes.h) \
-    $(wildcard include/config/have/arch/early/pfn/to/nid.h) \
-    $(wildcard include/config/sparsemem/extreme.h) \
-    $(wildcard include/config/have/arch/pfn/valid.h) \
-    $(wildcard include/config/holes/in/zone.h) \
-    $(wildcard include/config/arch/has/holes/memorymodel.h) \
-  include/linux/wait.h \
   include/uapi/linux/wait.h \
-  include/linux/numa.h \
-    $(wildcard include/config/nodes/shift.h) \
-  include/linux/nodemask.h \
-    $(wildcard include/config/movable/node.h) \
-  include/linux/pageblock-flags.h \
-    $(wildcard include/config/hugetlb/page.h) \
-    $(wildcard include/config/hugetlb/page/size/variable.h) \
-  include/linux/page-flags-layout.h \
-  include/generated/bounds.h \
-  include/linux/memory_hotplug.h \
-    $(wildcard include/config/memory/hotremove.h) \
-    $(wildcard include/config/have/arch/nodedata/extension.h) \
-    $(wildcard include/config/have/bootmem/info/node.h) \
-  include/linux/notifier.h \
-  include/linux/errno.h \
-  include/uapi/linux/errno.h \
-  include/linux/mutex.h \
-    $(wildcard include/config/mutex/spin/on/owner.h) \
-    $(wildcard include/config/debug/mutexes.h) \
-  include/linux/osq_lock.h \
-  include/linux/debug_locks.h \
-    $(wildcard include/config/debug/locking/api/selftests.h) \
-  include/linux/rwsem.h \
-    $(wildcard include/config/rwsem/spin/on/owner.h) \
-    $(wildcard include/config/rwsem/generic/spinlock.h) \
-  arch/x86/include/asm/rwsem.h \
-  include/linux/srcu.h \
+  include/linux/kdev_t.h \
+  include/uapi/linux/kdev_t.h \
+  include/linux/dcache.h \
+  include/linux/rculist.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/tiny/rcu.h) \
     $(wildcard include/config/tree/rcu.h) \
@@ -420,11 +356,16 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/rcu/boost.h) \
     $(wildcard include/config/rcu/nocb/cpu/all.h) \
     $(wildcard include/config/no/hz/full/sysidle.h) \
+  include/linux/seqlock.h \
   include/linux/completion.h \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects.h) \
     $(wildcard include/config/debug/objects/free.h) \
   include/linux/ktime.h \
+  include/linux/time.h \
+    $(wildcard include/config/arch/uses/gettimeoffset.h) \
+  include/linux/time64.h \
+  include/uapi/linux/time.h \
   include/linux/jiffies.h \
   include/linux/timex.h \
   include/uapi/linux/timex.h \
@@ -438,21 +379,67 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/x86/tsc.h) \
   include/generated/timeconst.h \
   include/linux/timekeeping.h \
+  include/linux/errno.h \
+  include/uapi/linux/errno.h \
   include/linux/rcutree.h \
-  include/linux/workqueue.h \
-    $(wildcard include/config/debug/objects/work.h) \
-    $(wildcard include/config/freezer.h) \
-    $(wildcard include/config/wq/watchdog.h) \
-  include/linux/timer.h \
-    $(wildcard include/config/timer/stats.h) \
-    $(wildcard include/config/debug/objects/timers.h) \
-    $(wildcard include/config/no/hz/common.h) \
-  include/linux/sysctl.h \
-    $(wildcard include/config/sysctl.h) \
+  include/linux/rculist_bl.h \
+  include/linux/list_bl.h \
+  include/linux/bit_spinlock.h \
+  include/linux/lockref.h \
+    $(wildcard include/config/arch/use/cmpxchg/lockref.h) \
+  include/generated/bounds.h \
+  include/linux/stringhash.h \
+    $(wildcard include/config/dcache/word/access.h) \
+  include/linux/hash.h \
+    $(wildcard include/config/have/arch/hash.h) \
+  include/linux/path.h \
+  include/linux/stat.h \
+  arch/x86/include/uapi/asm/stat.h \
+  include/uapi/linux/stat.h \
+  include/linux/uidgid.h \
+    $(wildcard include/config/multiuser.h) \
+    $(wildcard include/config/user/ns.h) \
+  include/linux/highuid.h \
+  include/linux/list_lru.h \
+    $(wildcard include/config/memcg.h) \
+    $(wildcard include/config/slob.h) \
+  include/linux/nodemask.h \
+    $(wildcard include/config/highmem.h) \
+    $(wildcard include/config/movable/node.h) \
+    $(wildcard include/config/numa.h) \
+  include/linux/numa.h \
+    $(wildcard include/config/nodes/shift.h) \
+  include/linux/shrinker.h \
+  include/linux/llist.h \
+    $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
+  include/linux/radix-tree.h \
+    $(wildcard include/config/radix/tree/multiorder.h) \
   include/linux/rbtree.h \
-  include/uapi/linux/sysctl.h \
-  arch/x86/include/asm/mmzone.h \
-  arch/x86/include/asm/mmzone_64.h \
+  include/linux/pid.h \
+  include/linux/mutex.h \
+    $(wildcard include/config/mutex/spin/on/owner.h) \
+    $(wildcard include/config/debug/mutexes.h) \
+  include/linux/osq_lock.h \
+  include/linux/debug_locks.h \
+    $(wildcard include/config/debug/locking/api/selftests.h) \
+  include/linux/rwsem.h \
+    $(wildcard include/config/rwsem/spin/on/owner.h) \
+    $(wildcard include/config/rwsem/generic/spinlock.h) \
+  arch/x86/include/asm/rwsem.h \
+  include/linux/capability.h \
+  include/uapi/linux/capability.h \
+  include/linux/semaphore.h \
+  include/uapi/linux/fiemap.h \
+  include/linux/migrate_mode.h \
+  include/linux/percpu-rwsem.h \
+  include/linux/percpu.h \
+    $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
+    $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
+  include/linux/mmdebug.h \
+    $(wildcard include/config/debug/vm.h) \
+    $(wildcard include/config/debug/vm/pgflags.h) \
+  include/linux/smp.h \
+    $(wildcard include/config/up/late/init.h) \
   arch/x86/include/asm/smp.h \
     $(wildcard include/config/x86/local/apic.h) \
     $(wildcard include/config/x86/io/apic.h) \
@@ -476,6 +463,7 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/x86/pmem/legacy.h) \
     $(wildcard include/config/intel/txt.h) \
   include/linux/ioport.h \
+    $(wildcard include/config/memory/hotremove.h) \
   arch/x86/include/asm/ist.h \
   arch/x86/include/uapi/asm/ist.h \
   include/video/edid.h \
@@ -487,8 +475,20 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
   include/linux/pm.h \
     $(wildcard include/config/vt/console/sleep.h) \
     $(wildcard include/config/pm.h) \
+    $(wildcard include/config/pm/sleep.h) \
     $(wildcard include/config/pm/clk.h) \
     $(wildcard include/config/pm/generic/domains.h) \
+  include/linux/workqueue.h \
+    $(wildcard include/config/debug/objects/work.h) \
+    $(wildcard include/config/freezer.h) \
+    $(wildcard include/config/wq/watchdog.h) \
+  include/linux/timer.h \
+    $(wildcard include/config/timer/stats.h) \
+    $(wildcard include/config/debug/objects/timers.h) \
+    $(wildcard include/config/no/hz/common.h) \
+  include/linux/sysctl.h \
+    $(wildcard include/config/sysctl.h) \
+  include/uapi/linux/sysctl.h \
   arch/x86/include/asm/fixmap.h \
     $(wildcard include/config/provide/ohci1394/dma/init.h) \
     $(wildcard include/config/pci/mmconfig.h) \
@@ -503,6 +503,7 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
   arch/x86/include/asm/topology.h \
     $(wildcard include/config/sched/mc/prio.h) \
   include/asm-generic/topology.h \
+    $(wildcard include/config/have/memoryless/nodes.h) \
   arch/x86/include/asm/mmu.h \
     $(wildcard include/config/modify/ldt/syscall.h) \
   arch/x86/include/asm/realmode.h \
@@ -536,16 +537,73 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
   arch/x86/include/asm/irq_vectors.h \
     $(wildcard include/config/have/kvm.h) \
     $(wildcard include/config/pci/msi.h) \
+  include/linux/rcu_sync.h \
+  include/linux/delayed_call.h \
+  include/uapi/linux/fs.h \
+  include/uapi/linux/limits.h \
+  include/linux/quota.h \
+    $(wildcard include/config/quota/netlink/interface.h) \
+  include/linux/percpu_counter.h \
+  include/linux/gfp.h \
+    $(wildcard include/config/zone/dma.h) \
+    $(wildcard include/config/zone/dma32.h) \
+    $(wildcard include/config/zone/device.h) \
+    $(wildcard include/config/memory/isolation.h) \
+    $(wildcard include/config/compaction.h) \
+    $(wildcard include/config/cma.h) \
+  include/linux/mmzone.h \
+    $(wildcard include/config/force/max/zoneorder.h) \
+    $(wildcard include/config/zsmalloc.h) \
+    $(wildcard include/config/memory/hotplug.h) \
+    $(wildcard include/config/flat/node/mem/map.h) \
+    $(wildcard include/config/page/extension.h) \
+    $(wildcard include/config/no/bootmem.h) \
+    $(wildcard include/config/numa/balancing.h) \
+    $(wildcard include/config/deferred/struct/page/init.h) \
+    $(wildcard include/config/transparent/hugepage.h) \
+    $(wildcard include/config/have/memory/present.h) \
+    $(wildcard include/config/need/node/memmap/size.h) \
+    $(wildcard include/config/have/memblock/node/map.h) \
+    $(wildcard include/config/need/multiple/nodes.h) \
+    $(wildcard include/config/have/arch/early/pfn/to/nid.h) \
+    $(wildcard include/config/sparsemem/extreme.h) \
+    $(wildcard include/config/have/arch/pfn/valid.h) \
+    $(wildcard include/config/holes/in/zone.h) \
+    $(wildcard include/config/arch/has/holes/memorymodel.h) \
+  include/linux/pageblock-flags.h \
+    $(wildcard include/config/hugetlb/page.h) \
+    $(wildcard include/config/hugetlb/page/size/variable.h) \
+  include/linux/page-flags-layout.h \
+  include/linux/memory_hotplug.h \
+    $(wildcard include/config/have/arch/nodedata/extension.h) \
+    $(wildcard include/config/have/bootmem/info/node.h) \
+  include/linux/notifier.h \
+  include/linux/srcu.h \
+  arch/x86/include/asm/mmzone.h \
+  arch/x86/include/asm/mmzone_64.h \
   include/linux/topology.h \
     $(wildcard include/config/use/percpu/numa/node/id.h) \
     $(wildcard include/config/sched/smt.h) \
-  include/linux/smp.h \
-    $(wildcard include/config/up/late/init.h) \
-  include/linux/llist.h \
-    $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
-  include/linux/percpu.h \
-    $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
-    $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
+  include/uapi/linux/dqblk_xfs.h \
+  include/linux/dqblk_v1.h \
+  include/linux/dqblk_v2.h \
+  include/linux/dqblk_qtree.h \
+  include/linux/projid.h \
+  include/uapi/linux/quota.h \
+  include/linux/nfs_fs_i.h \
+  include/linux/fcntl.h \
+  include/uapi/linux/fcntl.h \
+  arch/x86/include/uapi/asm/fcntl.h \
+  include/uapi/asm-generic/fcntl.h \
+  include/linux/module.h \
+    $(wildcard include/config/module/sig.h) \
+    $(wildcard include/config/modules/tree/lookup.h) \
+    $(wildcard include/config/livepatch.h) \
+    $(wildcard include/config/kallsyms.h) \
+    $(wildcard include/config/event/tracing.h) \
+    $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/constructors.h) \
+  include/linux/kmod.h \
   include/linux/elf.h \
   arch/x86/include/asm/elf.h \
     $(wildcard include/config/x86/x32/abi.h) \
@@ -611,8 +669,16 @@ deps_/home/mr_knownothing/github/Mercury/main.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
+  include/linux/cdev.h \
+  arch/x86/include/asm/uaccess.h \
+    $(wildcard include/config/x86/intel/usercopy.h) \
+  include/linux/kasan-checks.h \
+  arch/x86/include/asm/smap.h \
+    $(wildcard include/config/x86/smap.h) \
+  arch/x86/include/asm/extable.h \
+  arch/x86/include/asm/uaccess_64.h \
   /home/mr_knownothing/github/Mercury/device_file.h \
 
-/home/mr_knownothing/github/Mercury/main.o: $(deps_/home/mr_knownothing/github/Mercury/main.o)
+/home/mr_knownothing/github/Mercury/device_file.o: $(deps_/home/mr_knownothing/github/Mercury/device_file.o)
 
-$(deps_/home/mr_knownothing/github/Mercury/main.o):
+$(deps_/home/mr_knownothing/github/Mercury/device_file.o):

@@ -36,16 +36,17 @@ void string_in_hex(void *in_string, int in_string_size)
 void dump_partition(struct partition *part, int partition_number)
 {
 	printf("Partition /dev/sda%d\n", partition_number + 1);
-	printf("boot_flag = %02X\n", part->boot_flag);
-	printf("chs_begin = ");
+	printf("boot flag = %02X\n", part->boot_flag);
+	printf("cylinder head sector begin = ");
 	string_in_hex(part->chs_begin, 3);
-	printf("sys_type = %02X\n", part->sys_type);
-	printf("chs_end = ");
+	printf("sys type = %02X\n", part->sys_type);
+	printf("chs end = ");
 	string_in_hex(part->chs_end, 3);
-	printf("start_sector = ");
+	printf("start sector = ");
 	string_in_hex(part->start_sector, 4);
-	printf("nr_sector = ");
+	printf("nr sector = ");
 	string_in_hex(part->nr_sector, 4);
+	printf("\n");
 }
 
 int main(int argc, char **argv)

@@ -1,0 +1,1 @@
+cmd_/home/mr_knownothing/github/Mercury/lifo.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/mr_knownothing/github/Mercury/lifo.ko /home/mr_knownothing/github/Mercury/lifo.o /home/mr_knownothing/github/Mercury/lifo.mod.o ;  true

@@ -33,7 +33,7 @@ static const ssize_t g_s_Hello_World_size = sizeof(g_s_Hello_World_string);
 
 static ssize_t device_file_read( struct file *file_ptr, char __user *user_buffer, size_t count, loff_t *position)
 {
-	printk( KERN_NOTICE "Simple-driver: Device file is read at offset = %i, read bytes count = %u", (int)*position, (unsigned int)count );
+	printk( KERN_NOTICE "Mercury: Device file is read at offset = %i, read bytes count = %u", (int)*position, (unsigned int)count );
 	/* If position is behind the end of a file we have nothing to read */
 	if( *position >= g_s_Hello_World_size )
 		return 0;
@@ -54,7 +54,7 @@ static struct file_operations simple_driver_fops =
 };
 
 static int device_file_major_number = 0;
-static const char device_name[] = "Simple-driver";
+static const char device_name[] = "Mercury";
 
 int register_device(void)
 {

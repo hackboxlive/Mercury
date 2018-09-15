@@ -124,4 +124,4 @@ module_init(filter_init);
 module_exit(filter_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Me");
+MODULE_AUTHOR("hackboxlive");

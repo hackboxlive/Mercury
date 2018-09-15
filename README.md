@@ -1,12 +1,9 @@
 # Mercury
 
-Async block replication
+Tried my hands on writing kernel drivers. I tried building a character driver module.
 
-PHASE #1:	Trying to run MBR partition table and find the block offset and save those details
+But as most personal projects, I started it off with great passion, but when I came to know the semantics and procedure of building a device driver, I thought 'what a drag'. If anyone wants to contribute, please go ahead. Although, I must warn you, driver devlopment requires a lot more than application development skills.
 
-	1. Script 'mbr.c' reads the primary partition table and then the logical partion table(or I hope so)
+Ciao,
 
-	2. To run mbr.c, compile it with gcc/g++, and then do `sudo ./a.out`. It should print your primary MBR table
-
-	3. I am not responsible for any breakage to your system.
-
+~hackboxlive

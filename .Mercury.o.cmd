@@ -1,0 +1,1 @@
+cmd_/home/mr_knownothing/github/Mercury/Mercury.o := ld -m elf_x86_64   -r -o /home/mr_knownothing/github/Mercury/Mercury.o /home/mr_knownothing/github/Mercury/main.o /home/mr_knownothing/github/Mercury/device_file.o 
